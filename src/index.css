@@ -1,0 +1,145 @@
+/* ==========================================================================
+   🌸 SIMPLE, PREMIUM, EMOTIONAL COLOR PALETTE & DESIGN TOKENS
+   Understated luxury, warm candlelight, soft champagne & dusty blush.
+   No neon lighting, no harsh glows.
+   ========================================================================== */
+:root {
+  /* Rich Warm Midnight Atmosphere */
+  --bg-dark-base: #0c0714;
+  --bg-dark-mid: #150d22;
+  --bg-dark-card: rgba(25, 16, 38, 0.75);
+  
+  /* Soft Dusty Rose & Warm Blush */
+  --rose-soft: #f7d6e0;
+  --rose-primary: #d9829f;
+  --rose-deep: #b85d7b;
+  
+  /* Warm Champagne & Candlelight Gold */
+  --champagne-light: #fbf5ed;
+  --champagne-gold: #d4af37;
+  --gold-warm: #c59b27;
+  --gold-soft: #ebd39c;
+
+  /* Sophisticated Soft Whites */
+  --white-pure: #ffffff;
+  --white-soft: #f7f2ea;
+  --white-muted: rgba(247, 242, 234, 0.65);
+
+  /* Subtle Refined Glassmorphism (Matte, non-neon) */
+  --glass-bg: rgba(255, 255, 255, 0.045);
+  --glass-bg-hover: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-border-hover: rgba(235, 211, 156, 0.35);
+  --glass-blur: blur(24px);
+
+  /* Elevation */
+  --shadow-subtle: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-hover: 0 16px 40px rgba(0, 0, 0, 0.45);
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-script: 'Dancing Script', cursive;
+  --font-handwriting: 'Caveat', cursive;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Reset & Setup */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  overflow-x: hidden;
+  background-color: var(--bg-dark-base);
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--white-soft);
+  background: radial-gradient(circle at 50% 12%, #1e1130 0%, #11091d 45%, #0c0714 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.6;
+  position: relative;
+}
+
+::selection {
+  background: var(--rose-primary);
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 95px 0;
+  position: relative;
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 52px;
+  position: relative;
+}
+.section-subtitle {
+  font-family: var(--font-script);
+  font-size: clamp(1.6rem, 3.8vw, 2.3rem);
+  color: var(--rose-soft);
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.1rem, 4.6vw, 3.2rem);
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+.section-desc {
+  color: var(--white-muted);
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin: 12px auto 0;
+  font-weight: 300;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes gentleBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.92); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes floatDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+@keyframes floatSlow {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(-10px) rotate(6deg); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  section { padding: 70px 0; }
+}
