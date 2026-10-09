@@ -60,3 +60,14 @@ All 11 personal photos found in the folder have been categorized, styled as Pola
 - **Vibe Filter Pills:** Quickly filter by *All*, *Elegance*, *Childhood*, or *Aesthetic*.
 - **Interactive Lightbox:** Full high-resolution modal zoom with keyboard controls (`←` / `→` / `Esc`), previous/next navigation buttons, and touch swipe gestures on mobile.
 - **Heart Reaction Badge:** Tap the ❤️ button inside the lightbox or on the cards to leave love reactions for each memory!
+
+---
+
+## 🔗 WhatsApp & Instagram Link Preview (Social Share Card)
+
+When you share the website link on **WhatsApp**, **Instagram DM**, **Facebook**, or **iMessage**, a preview card is automatically displayed:
+
+- **Banner Image:** Located at [`public/og-preview.jpg`](file:///Users/mithumohan/Downloads/linh%20birthday/public/og-preview.jpg) (1200 × 630px, optimized at ~120KB for fast crawler rendering) and [`public/og-preview-square.jpg`](file:///Users/mithumohan/Downloads/linh%20birthday/public/og-preview-square.jpg) (square fallback).
+- **Design:** Dreamy nocturnal purple backdrop with starlight particles, glowing bokeh, dual layered Polaroid frames featuring Linh, and the greeting *"Happy Birthday, Linh!"*.
+- **Open Graph Meta Tags:** Pre-configured in [`index.html`](file:///Users/mithumohan/Downloads/linh%20birthday/index.html) with `og:image`, `og:title`, `og:description`, `twitter:image`, and WhatsApp legacy `image_src` fallback.
+
